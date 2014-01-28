@@ -13,6 +13,7 @@ header {
 }
 
 .banner {
+    padding: 100px;
     color: #fff;
     background: #2980b9;
     background: -moz-linear-gradient(-45deg,  #2980b9 0%, #2ecc71 100%);
