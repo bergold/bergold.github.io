@@ -24,3 +24,7 @@ header {
     background: linear-gradient(135deg,  #2980b9 0%,#2ecc71 100%);
     text-align: center;
 }
+
+h1, h2 {
+    font-weight: 100;
+}
