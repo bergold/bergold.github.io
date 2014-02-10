@@ -33,7 +33,7 @@ h1, h2 {
     display: block;
     width: 250px;
     height: 42px;
-    margin: 100px auto;
+    margin: 100px auto 0;
     box-sizing: border-box;
     border-radius: 2px;
     background: transparent;
@@ -45,6 +45,7 @@ h1, h2 {
     text-decoration: none;
     text-align: center;
     -webkit-tap-highlight-color: transparent;
+    cursor: default;
 }
 .button:hover {
     background: rgba(255, 255, 255, 0.2);
