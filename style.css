@@ -33,6 +33,7 @@ h1, h2 {
     display: block;
     width: 250px;
     height: 42px;
+    margin: 100px auto;
     box-sizing: border-box;
     border-radius: 2px;
     background: transparent;
