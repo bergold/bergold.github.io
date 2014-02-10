@@ -28,3 +28,27 @@ header {
 h1, h2 {
     font-weight: 100;
 }
+
+.button {
+    display: block;
+    width: 250px;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    transition: all 0.2s ease;
+    color: #ffffff;
+    line-height: 42px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.button:active {
+    background: #ffffff;
+    color: #2980b9;
+}
