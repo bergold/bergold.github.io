@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 0 50px 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background: #f4f4f4;
@@ -61,11 +61,49 @@ h1, h2 {
     max-width: 512px;
 }
 
+.letter {
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    background: #d1510d;
+    color: #fff;
+    font-size: 12pt;
+    font-weight: 400;
+    padding: 20px;
+    line-height: 28px;
+}
+
 .row {
     display: flex;
     flex-direction: row;
 }
 
-.row input {
+.row span {
+    margin-right: 4px;
+    font-weight: 300;
+}
+
+.btn, .txt, .mtxt {
     flex: 1;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font: inherit;
+    resize: none;
+}
+
+.txt {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.mtxt {
+    height: 224px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(96%, rgba(0, 0, 0, 0)), color-stop(96%, rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0.25)));
+    background-size: 100% 28px;
+}
+
+.btn {
+    margin-top: 20px;
 }
