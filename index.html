@@ -25,8 +25,8 @@
                     <div class="title">{{repo.name}}</div>
                     <div class="desc">{{repo.description}}</div>
                     <div class="foot">
-                        <a ng-href="{{repo.homepage}}">Homepage</a>
-                        <a ng-href="{{repo.html_url}}">GitHub Repo</a>
+                        <a ng-href="{{repo.html_url}}" ng-if="repo.html_url">GitHub Repo</a>
+                        <a ng-href="{{repo.homepage}}" ng-if="repo.homepage">Homepage</a>
                     </div>
                 </div>
             </div>
