@@ -56,9 +56,9 @@ h1, h2 {
 }
 
 .boxes {
-    margin: 0 auto;
+    margin: -45px auto 45px;
     width: 100%;
-    max-width: 512px;
+    max-width: 840px;
 }
 
 .box {
