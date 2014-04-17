@@ -70,32 +70,24 @@ h1, h2 {
     height: 260px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
 }
 
 .box.ng-enter {
     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     opacity: 0;
+    top: 20px;
 }
 
-.box.ng-enter.ng-enter-active {
-    opacity: 1;
-}
-
-/*.box.ng-enter-stagger {
+.box.ng-enter-stagger {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    
-    -webkit-transition-duration: 0s;
-    transition-duration: 0s;
-}*/
+}
+
+.box.ng-enter-active {
+    opacity: 1;
+    top: 0;
+}
 
 .title {
     height: 35px;
