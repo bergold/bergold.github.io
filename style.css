@@ -62,7 +62,7 @@ h1, h2 {
 }
 
 .box {
-    display: inline-box;
+    display: inline-block;
     margin: 20px;
     padding: 20px;
     width: 200px;
