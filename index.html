@@ -4,6 +4,7 @@
         <title>bergold on github</title>
         
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300italic' rel='stylesheet' type='text/css' />
+        <link href="icons.css" type="text/css" rel="stylesheet" media="all" />
         <link href="style.css" type="text/css" rel="stylesheet" media="all" />
         
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
@@ -20,13 +21,13 @@
                     contact me
                 </div>-->
             </div>
-            <div class="panel boxes" ng-controller="ReposCtrl">
+            <div class="boxes" ng-controller="ReposCtrl">
                 <div class="box" ng-repeat="repo in repos">
                     <div class="title">{{repo.name}}</div>
                     <div class="desc">{{repo.description}}</div>
                     <div class="foot">
-                        <a ng-href="{{repo.html_url}}" ng-if="repo.html_url">GitHub Repo</a>
-                        <a ng-href="{{repo.homepage}}" ng-if="repo.homepage">Homepage</a>
+                        <a ng-href="{{repo.html_url}}" ng-if="repo.html_url" class="icon icon-github">GitHub Repo</a>
+                        <a ng-href="{{repo.homepage}}" ng-if="repo.homepage" class="icon icon-earth">Homepage</a>
                     </div>
                 </div>
             </div>
