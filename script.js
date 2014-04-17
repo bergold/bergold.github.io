@@ -10,7 +10,7 @@ ghHome.factory('repos', function($http) {
   };
 });
 
-ghHome.controller('ReposCtrl', function($scope) {
+ghHome.controller('ReposCtrl', function($scope, repos) {
   $scope.repos = [];
   $scope.goto = function(repo) {
   
