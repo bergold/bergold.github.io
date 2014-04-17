@@ -65,10 +65,28 @@ h1, h2 {
     display: block;
     float: left;
     margin: 20px;
-    padding: 20px;
-    width: 200px;
-    height: 230px;
+    width: 240px;
+    height: 270px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
+.title {
+    height: 100px;
+}
+
+.desc {
+    height: 100px;
+}
+
+.foot {
+    height: 60px;
+    background: #eee;
+}
+
+.foot a {
+    display: block;
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+}
