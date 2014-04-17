@@ -12,11 +12,13 @@ ghHome.factory('repos', function($q, $http) {
   };
 });
 
-ghHome.controller('ReposCtrl', function($scope, repos) {
+ghHome.controller('ReposCtrl', function($scope, $timeout, repos) {
   $scope.repos = [];
   repos.getPublic('bergold').then(function(rs) {
-    angular.forEach(rs, function(r) {
-      $scope.repos.push(r);
+    angular.forEach(rs, function(r, i) {
+      $timeout(function() {
+        $scope.repos.push(r);
+      }, i*500, false);
     });
   });
 });
