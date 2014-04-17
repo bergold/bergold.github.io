@@ -1,11 +1,13 @@
 var ghHome = angular.module('ghHome', []);
 
-ghHome.factory('repos', function($http) {
+ghHome.factory('repos', function($q, $http) {
   return {
     getMy: function(un) {
-      return $http.get('https://api.github.com/users/' + un + '/repos').success(function(xhr) {
-        return xhr.data;
+      var deferred = $q.defer();
+      $http.get('https://api.github.com/users/' + un + '/repos').success(function(data) {
+        deferred.resolve(data);
       });
+      return deferred.promise;
     }
   };
 });
