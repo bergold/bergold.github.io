@@ -22,6 +22,7 @@ ghHome.controller('ReposCtrl', function($scope, repos) {
     return repo.name;
   }
   repos.getMy('bergold').then(function(r) {
+    console.log(r);
     $scope.repos = r;
   });
 });
