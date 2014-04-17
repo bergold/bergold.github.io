@@ -22,7 +22,6 @@
             </div>
             <div class="panel boxes" ng-controller="ReposCtrl">
                 <div class="box" ng-repeat="repo in repos" ng-click="goto(repo)">
-                    <div class="la">{{log(repo)}}</div>
                     <div class="title">{{repo.name}}</div>
                     <div class="desc">{{repo.description}}</div>
                 </div>
