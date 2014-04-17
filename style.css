@@ -62,6 +62,7 @@ h1, h2 {
 }
 
 .box {
+    position: relative;
     display: block;
     float: left;
     margin: 20px;
@@ -69,6 +70,45 @@ h1, h2 {
     height: 260px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    
+    -webkit-transition: 1s linear all;
+    transition: 1s linear all;
+    top: 0;
+}
+
+.box.ng-move,
+.box.ng-enter,
+.box.ng-leave {
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+.box.ng-leave.ng-leave-active,
+.box.ng-move,
+.box.ng-enter {
+    opacity: 0;
+    top: 90px;
+}
+
+.box.ng-leave,
+.box.ng-move.ng-move-active,
+.box.ng-enter.ng-enter-active {
+    opacity: 1;
+    top: 0;
+}
+
+.box.ng-leave-stagger {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+.box.ng-enter-stagger {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
 }
 
 .title {
