@@ -21,9 +21,13 @@
                 </div>-->
             </div>
             <div class="panel boxes" ng-controller="ReposCtrl">
-                <div class="box" ng-repeat="repo in repos" ng-click="goto(repo)">
+                <div class="box" ng-repeat="repo in repos">
                     <div class="title">{{repo.name}}</div>
                     <div class="desc">{{repo.description}}</div>
+                    <div class="foot">
+                        <a ng-href="repo.homepage">Homepage</a>
+                        <a ng-href="repo.html_url">GitHub Repo</a>
+                    </div>
                 </div>
             </div>
         </div>
