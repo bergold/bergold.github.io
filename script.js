@@ -18,6 +18,7 @@ ghHome.controller('ReposCtrl', function($scope, $timeout, repos) {
     angular.forEach(rs, function(r, i) {
       console.log(i, r);
       $timeout(function() {
+        console.log('delayed', i, r);
         $scope.repos.push(r);
       }, i*500 + 500, false);
     });
