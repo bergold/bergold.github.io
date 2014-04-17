@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ghHome">
     <head>
         <title>bergold on github</title>
+        
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300italic' rel='stylesheet' type='text/css' />
         <link href="style.css" type="text/css" rel="stylesheet" media="all" />
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -16,30 +19,11 @@
                     contact me
                 </div>-->
             </div>
-            <div class="panel hidden">
-                <h1>contact me</h1>
-                <p>Use this form to send me a message. This could be an advice, an offer or anything else.</p>
-                <form action="//contact.kaetering.bplaced.com/msg" method="post">
-                    <div class="letter">
-                        <div class="row">
-                            <span>Hello Bergold,</span>
-                        </div>
-                        <div class="row">
-                            <span>My name is</span>
-                            <input type="text" class="txt" name="replname" />
-                        </div>
-                        <div class="row">
-                            <textarea name="msg" class="mtxt"></textarea>
-                        </div>
-                        <div class="row">
-                            <span>My email is</span>
-                            <input type="email" class="txt" name="email" />
-                        </div>
-                        <div class="row">
-                            <input type="submit" class="btn" name="send" value="Send" />
-                        </div>
-                    </div>
-                </form>
+            <div class="panel boxes" ng-controller="ReposCtrl">
+                <div class="box" ng-repeat="repo in repos" ng-click="goto(repo)">
+                    <div class="title"></div>
+                    <div class="desc"></div>
+                </div>
             </div>
         </div>
     </body>
