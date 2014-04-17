@@ -21,9 +21,9 @@
                 </div>-->
             </div>
             <div class="panel boxes" ng-controller="ReposCtrl">
-                <div class="box" ng-repeat="repo in repos">
-                    <div class="title"></div>
-                    <div class="desc"></div>
+                <div class="box" ng-repeat="repo in repos" ng-click="goto(repo)">
+                    <div class="title">{{repo.name}}</div>
+                    <div class="desc">{{repo.description}}</div>
                 </div>
             </div>
         </div>
