@@ -12,10 +12,10 @@ ghHome.factory('repos', function($q, $http) {
   };
 });
 
-ghHome.controller('ReposCtrl', function($scope, $location, repos) {
+ghHome.controller('ReposCtrl', function($scope, repos) {
   $scope.repos = [];
   $scope.goto = function(repo) {
-    $location.url(repo.homepage || repo.html_url);
+    location.href = repo.homepage || repo.html_url;
   };
   repos.getMy('bergold').then(function(r) {
     $scope.repos = r;
