@@ -19,7 +19,7 @@ ghHome.controller('ReposCtrl', function($scope, $timeout, repos) {
       console.log(i, r);
       $timeout(function() {
         $scope.repos.push(r);
-      }, i*500, false);
+      }, i*500 + 500, false);
     });
   });
 });
