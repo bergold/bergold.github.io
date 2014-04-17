@@ -1,4 +1,4 @@
-var ghHome = angular.module('ghHome', []);
+var ghHome = angular.module('ghHome', ['ngAnimate']);
 
 ghHome.factory('repos', function($q, $http) {
   return {
