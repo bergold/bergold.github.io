@@ -85,13 +85,13 @@ h1, h2 {
     opacity: 1;
 }
 
-.box.ng-enter-stagger {
+/*.box.ng-enter-stagger {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
     
     -webkit-transition-duration: 0s;
     transition-duration: 0s;
-}
+}*/
 
 .title {
     height: 35px;
