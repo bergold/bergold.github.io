@@ -13,14 +13,13 @@ ghHome.factory('repos', function($q, $http) {
 });
 
 ghHome.controller('ReposCtrl', function($scope, repos) {
-  $scope.repos = [
-    {
+  $scope.repos = [];
+  repos.getPublic('bergold').then(function(rs) {
+    $scope.repos.push({
       "name": "kaetering.bplaced.com",
       "description": "My main server",
       "homepage": "http://kaetering.bplaced.com"
-    }
-  ];
-  repos.getPublic('bergold').then(function(rs) {
+    });
     angular.forEach(rs, function(r, i) {
       $scope.repos.push(r);
     });
