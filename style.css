@@ -71,13 +71,13 @@ h1, h2 {
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     
-    -webkit-transition: 1s linear all;
-    transition: 1s linear all;
+    -webkit-transition: 5s linear all;
+    transition: 5s linear all;
 }
 
 .box.ng-enter {
-    -webkit-transition: 1s linear all;
-    transition: 1s linear all;
+    -webkit-transition: 5s linear all;
+    transition: 5s linear all;
     opacity: 0;
 }
 
