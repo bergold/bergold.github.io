@@ -14,7 +14,9 @@ ghHome.factory('repos', function($q, $http) {
 
 ghHome.controller('ReposCtrl', function($scope, repos) {
   $scope.repos = [];
-  repos.getPublic('bergold').then(function(r) {
-    $scope.repos = r;
+  repos.getPublic('bergold').then(function(rs) {
+    angular.forEach(rs, function(r) {
+      $scope.push(r);
+    });
   });
 });
