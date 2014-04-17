@@ -66,7 +66,7 @@ h1, h2 {
     float: left;
     margin: 20px;
     width: 240px;
-    height: 270px;
+    height: 260px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
@@ -89,4 +89,11 @@ h1, h2 {
     padding: 0 20px;
     height: 30px;
     line-height: 30px;
+    font-size: 10pt;
+    color: #888;
+    text-decoration: none;
+}
+
+.foot a:hover {
+    color: #444;
 }
