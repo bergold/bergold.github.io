@@ -73,12 +73,13 @@ h1, h2 {
     
     -webkit-transition: 1s linear all;
     transition: 1s linear all;
-    top: 0;
 }
 
 .box.ng-move,
 .box.ng-enter,
 .box.ng-leave {
+    opacity: 0;
+    top: 90px;
     -webkit-transition: all linear 0.5s;
     transition: all linear 0.5s;
 }
