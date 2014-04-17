@@ -12,15 +12,17 @@ ghHome.factory('repos', function($q, $http) {
   };
 });
 
-ghHome.controller('ReposCtrl', function($scope, $timeout, repos) {
-  $scope.repos = [];
+ghHome.controller('ReposCtrl', function($scope, repos) {
+  $scope.repos = [
+    {
+      "name": "kaetering.bplaced.com",
+      "description": "My main server",
+      "homepage": "http://kaetering.bplaced.com"
+    }
+  ];
   repos.getPublic('bergold').then(function(rs) {
     angular.forEach(rs, function(r, i) {
-      console.log(i, r);
-      $timeout(function() {
-        console.log('delayed', i, r);
-        $scope.repos.push(r);
-      }, i*500 + 500, false);
+      $scope.repos.push(r);
     });
   });
 });
