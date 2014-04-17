@@ -16,6 +16,7 @@ ghHome.controller('ReposCtrl', function($scope, $timeout, repos) {
   $scope.repos = [];
   repos.getPublic('bergold').then(function(rs) {
     angular.forEach(rs, function(r, i) {
+      console.log(i, r);
       $timeout(function() {
         $scope.repos.push(r);
       }, i*500, false);
